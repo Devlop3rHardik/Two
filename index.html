@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Polymer-Style 3D Desert</title>
+    <title>Simple Three.js Game</title>
     <style>
-        body { margin: 0; }
+        body { margin: 0; overflow: hidden; }
         canvas { display: block; }
+        #error-message { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: red; }
     </style>
 </head>
 <body>
+    <div id="error-message"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/OrbitControls.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
